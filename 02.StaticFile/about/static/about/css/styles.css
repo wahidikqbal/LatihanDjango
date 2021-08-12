@@ -1,0 +1,27 @@
+.jumbotron {
+	background-image: url(/static/about/img/bannerAbout.png);
+	background-position: center center;
+	background-size: cover;
+	z-index: -2;
+	height: 500px;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	margin-top: 130px;
+	color: lightgoldenrodyellow;
+}
+
+
+.overlay {
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+

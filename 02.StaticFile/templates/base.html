@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> {{tittle}} </title>
+
+	{% include "snippets/styles.html" %}
+
+	{% block cssApp %}
+	    {# ini css saya #}
+	{% endblock cssApp %}
+
+
+</head>
+
+
+<body>
+
+	{% include "snippets/nav.html" %}
+
+	<div class="jumbotron jumbotron-fluid" >
+		<div class="container text-light">
+			<div class="overlay"></div>
+			<h1 class="display-4 mb-1"> {{heading}} </h1>
+			<p class="lead"> {{tittle}} </p>
+		</div>
+	</div>
+
+
+	{% block contentApp %}
+	    {# ini konten saya #}
+	{% endblock contentApp %}
+
+	{% include "snippets/scripts.html" %}
+</body>
+</html>
+

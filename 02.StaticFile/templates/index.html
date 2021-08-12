@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block cssApp %}
+	<link rel="stylesheet" type="text/css" href=" {% static "css/styles.css" %}">	    
+{% endblock cssApp %}
+
+
+{% block contentApp %}
+    {% include "snippets/content.html" %}
+{% endblock contentApp %}
